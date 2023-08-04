@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 '''Task 9'''
-from typing import List, Tuple
+from typing import Iterable, List, Sequence, Tuple
 
 
-def element_length(lst: List[str]) -> List[Tuple[str, int]]:
-    '''List of string returns a List of Tuple'''
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+    '''Computes the length of a list of sequences'''
     return [(i, len(i)) for i in lst]
